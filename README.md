@@ -2,8 +2,25 @@
 
 
 ## Ramblings
+
+#### Testing for Equality
+`=` works on items of an array
+To compare if 2 pieces of data are equivalent, use the `"Match"` function, `-:`
+
+```j
+0 1 2 = 0 0 0
+1 0 0
+
+0 1 2 = 0 1 2
+1 1 1
+
+0 1 2 -: 0 1 2
+```
+
+
 J maps lots of concepts to numbers.
 For example, 
+
 #### Types
 noun        =: 0  
 adverb      =: 1  
@@ -54,6 +71,5 @@ And there are 2 special cases for tautologies:
 `2!:3 y`   **WAIT** Wait for pid `y` to terminate. The result is the status code returned by the process.  
 `2!:5 y`  **GETENV**  Result is the shell environment variable named `y` or 0 if it doesn't exist.
 `2!:55 y`  **TERMINATE SESSION** `y` is an integer return code  
-
 
 
